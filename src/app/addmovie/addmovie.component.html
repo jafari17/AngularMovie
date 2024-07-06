@@ -1,0 +1,18 @@
+<form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">movie name</label>
+        <input #moviename type="text" class="form-control" id="inputEmail4">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">linkimage</label>
+        <input #linkimage type="text" class="form-control" id="inputPassword4">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">genre</label>
+      <input #genre type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+
+    <button (click)="onAddMovie(moviename.value, linkimage.value, genre.value, $event)" type="submit" class="btn btn-primary">Add movie</button>
+  </form>

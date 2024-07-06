@@ -1,0 +1,8 @@
+<app-navfooter></app-navfooter>
+<br>
+<div class="container-fluid">
+  <app-addmovie (onAddMovieClicked)="movieAdded($event)"></app-addmovie>
+  <app-movielist [movies]="movies"></app-movielist>
+</div>
+ 
+<router-outlet></router-outlet>
